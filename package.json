@@ -21,6 +21,14 @@
     "THIRD_PARTY_NOTICES.md"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongsheng123132/dsh-xiapan-media.git"
+  },
+  "homepage": "https://github.com/dongsheng123132/dsh-xiapan-media#readme",
+  "bugs": {
+    "url": "https://github.com/dongsheng123132/dsh-xiapan-media/issues"
+  },
   "engines": {
     "node": ">=22.19.0",
     "dsh": ">=0.1.0-rc.6"

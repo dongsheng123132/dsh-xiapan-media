@@ -1,5 +1,9 @@
 # dsh-xiapan-media
 
+[![CI](https://github.com/dongsheng123132/dsh-xiapan-media/actions/workflows/ci.yml/badge.svg)](https://github.com/dongsheng123132/dsh-xiapan-media/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![DeepSeek Harness](https://img.shields.io/badge/DeepSeek-Harness-4f46e5)](https://github.com/deepseek-ai/deepseek-harness)
+
 给 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 增加三项原生媒体能力：
 
 1. **识图/OCR**：`xiapan-vision` 路由让仍由 DeepSeek 负责思考的会话可以直接粘贴图片；图片先由虾盘云 `qwen3.7-flash` 转译为文本，再交回原文本模型。另提供 `xiapan_vision_analyze`、`xiapan_vision_ocr`、`xiapan_vision_locate` 三个文件工具。
@@ -16,7 +20,13 @@
 dsh plugin --profile web add "link:D:/uking编程/dsh-xiapan-media"
 ```
 
-发布到 GitHub/npm 后，把 `link:` 地址换成固定 Git commit 或 npm 包版本。插件包通过 `cordis.patch.yml` 一次安装三个独立插件行，任何一项都可以单独从 profile 中删除。
+GitHub 固定提交安装：
+
+```powershell
+dsh plugin --profile web add "github:dongsheng123132/dsh-xiapan-media#COMMIT_SHA"
+```
+
+发布后请把 `COMMIT_SHA` 换成 README/Release 中经过 CI 的完整提交。插件包通过 `cordis.patch.yml` 一次安装三个独立插件行，任何一项都可以单独从 profile 中删除。
 
 自动粘贴识图依赖文本路由 `uking-managed`。安装完成后在 DSH 模型选择器里选择 **U-King DeepSeek + 虾盘云识图**（路由 ID `xiapan-vision`）。如果用户只安装了原生 DeepSeek 路由，可把视觉插件的 `innerProvider` 改成实际文本 provider ID。
 
