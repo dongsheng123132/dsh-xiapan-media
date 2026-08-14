@@ -33,7 +33,8 @@ jobs:
           $env:DSH_HOME = Join-Path $env:RUNNER_TEMP 'dsh-xiapan-media-home'
           npx -y @deepseek-ai/dsh@0.1.0-rc.6 --profile headless --dump-default-config | Out-Null
           npx -y @deepseek-ai/dsh@0.1.0-rc.6 plugin --profile headless add "link:$env:GITHUB_WORKSPACE"
-          $config = npx -y @deepseek-ai/dsh@0.1.0-rc.6 --profile headless --dump-config
+          $config = (npx -y @deepseek-ai/dsh@0.1.0-rc.6 --profile headless --dump-config) -join "`n"
           foreach ($id in @('dsh-xiapan-vision', 'dsh-xiapan-image', 'dsh-xiapan-video')) {
             if ($config -notmatch [regex]::Escape($id)) { throw "bundle missing $id" }
           }
+          npx -y @deepseek-ai/dsh@0.1.0-rc.6 --profile headless --help | Out-Null

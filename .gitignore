@@ -1,4 +1,5 @@
 node_modules/
+.tmp-dsh-*/
 .tmp-dsh-home/
 .dsh-media/
 coverage/
