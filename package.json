@@ -1,6 +1,6 @@
 {
   "name": "dsh-xiapan-media",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DeepSeek Harness native vision, gpt-image-2 image generation, and Seedance video generation via Xiapan Cloud.",
   "type": "module",
   "main": "./vision.js",
@@ -36,6 +36,15 @@
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dsh": ">=0.1.2-alpha.4",
+      "node": ">=22.19.0",
+      "dshReleases": {
+        "0.1.2-alpha.4": "compatible",
+        "0.1.2-alpha.5": "compatible",
+        "0.1.2-rc.1": "compatible"
+      }
     }
   },
   "scripts": {
@@ -46,9 +55,9 @@
     "schemastery": "^3.18.0"
   },
   "devDependencies": {
-    "@deepseek-ai/cordis": "4.0.1",
-    "@deepseek-ai/dsh-credentials": "0.0.1-rc.1",
-    "@deepseek-ai/dsh-tools": "0.0.1-rc.1"
+    "@deepseek-ai/cordis": "^4.0.2",
+    "@deepseek-ai/dsh-credentials": "0.1.2-rc.1",
+    "@deepseek-ai/dsh-tools": "0.1.2-rc.1"
   },
   "keywords": [
     "deepseek-harness",
