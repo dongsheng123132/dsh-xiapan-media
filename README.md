@@ -1,5 +1,7 @@
 # dsh-xiapan-media
 
+**Maintainer / Author：贺去病 (He Fangsheng / Dosen) · [hequbing.com](https://www.hequbing.com)**
+
 [![CI](https://github.com/dongsheng123132/dsh-xiapan-media/actions/workflows/ci.yml/badge.svg)](https://github.com/dongsheng123132/dsh-xiapan-media/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![DeepSeek Harness](https://img.shields.io/badge/DeepSeek-Harness-4f46e5)](https://github.com/deepseek-ai/deepseek-harness)
