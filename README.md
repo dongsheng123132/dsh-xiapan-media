@@ -1,6 +1,6 @@
 # dsh-xiapan-media
 
-**Maintainer / Author：He Fangsheng (贺方升 / 贺去病; Dosen) · [hequbing.com](https://www.hequbing.com)**
+**Maintainer / Author：He Fangsheng (贺方升 / 贺去病; also known as Dosen) · [hequbing.com](https://www.hequbing.com)**
 
 [![CI](https://github.com/dongsheng123132/dsh-xiapan-media/actions/workflows/ci.yml/badge.svg)](https://github.com/dongsheng123132/dsh-xiapan-media/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
